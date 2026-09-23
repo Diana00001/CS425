@@ -1,0 +1,78 @@
+time=2026-09-22T22:53:46.986-05:00 level=INFO msg="Protocol mode changed" machine=3 enableSuspicion=false
+time=2026-09-22T22:53:47.044-05:00 level=INFO msg="Joining cluster via introducer..." machine=3 introHost=localhost introPort=8080
+time=2026-09-22T22:53:47.044-05:00 level=INFO msg="server joining cluster via introducer..." machine=3
+time=2026-09-22T22:53:47.101-05:00 level=INFO msg="server listening" machine=3 addr=localhost:8082
+time=2026-09-22T22:53:47.106-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=3 totalMembers=3
+time=2026-09-22T22:56:19.545-05:00 level=INFO msg="Node marked as Failed due to timeout" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:56:25.545-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:56:32.045-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:56:39.045-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:56:46.045-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:56:53.045-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:57:00.045-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:57:07.045-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T22:57:14.045-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790135615
+time=2026-09-22T23:00:35.686-05:00 level=INFO msg="Protocol mode changed" machine=3 enableSuspicion=false
+time=2026-09-22T23:00:35.879-05:00 level=INFO msg="Joining cluster via introducer..." machine=3 introHost=localhost introPort=8080
+time=2026-09-22T23:00:35.903-05:00 level=INFO msg="server joining cluster via introducer..." machine=3
+time=2026-09-22T23:00:36.120-05:00 level=INFO msg="server listening" machine=3 addr=localhost:8082
+time=2026-09-22T23:00:36.189-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=3 totalMembers=3
+time=2026-09-22T23:01:08.379-05:00 level=INFO msg="Node marked as Failed due to timeout" machine=3 nodeID=2:localhost:8081:1790136035
+time=2026-09-22T23:01:14.380-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790136035
+time=2026-09-22T23:03:22.590-05:00 level=INFO msg="Protocol mode changed" machine=3 enableSuspicion=true
+time=2026-09-22T23:03:23.346-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:170  status:\"Alive\"" localState="heartbeat:169  status:\"Alive\""
+time=2026-09-22T23:03:23.530-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:117  status:\"Alive\"" localState="heartbeat:115  status:\"Alive\""
+time=2026-09-22T23:03:24.345-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:172  status:\"Alive\"" localState="heartbeat:170  status:\"Alive\""
+time=2026-09-22T23:03:24.535-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:118  status:\"Alive\"" localState="heartbeat:117  status:\"Alive\""
+time=2026-09-22T23:03:25.345-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:173  status:\"Alive\"" localState="heartbeat:172  status:\"Alive\""
+time=2026-09-22T23:03:25.530-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:119  status:\"Alive\"" localState="heartbeat:118  status:\"Alive\""
+time=2026-09-22T23:03:26.344-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:174  status:\"Alive\"" localState="heartbeat:173  status:\"Alive\""
+time=2026-09-22T23:03:26.530-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:120  status:\"Alive\"" localState="heartbeat:119  status:\"Alive\""
+time=2026-09-22T23:03:27.531-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:121  status:\"Alive\"" localState="heartbeat:120  status:\"Alive\""
+time=2026-09-22T23:03:28.351-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:176  status:\"Alive\"" localState="heartbeat:174  status:\"Alive\""
+time=2026-09-22T23:03:28.531-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:122  status:\"Alive\"" localState="heartbeat:121  status:\"Alive\""
+time=2026-09-22T23:03:29.346-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:177  status:\"Alive\"" localState="heartbeat:176  status:\"Alive\""
+time=2026-09-22T23:03:29.544-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:123  status:\"Alive\"" localState="heartbeat:122  status:\"Alive\""
+time=2026-09-22T23:03:30.351-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:178  status:\"Alive\"" localState="heartbeat:177  status:\"Alive\""
+time=2026-09-22T23:03:31.537-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:124  status:\"Alive\"" localState="heartbeat:123  status:\"Alive\""
+time=2026-09-22T23:03:32.349-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:180  status:\"Alive\"" localState="heartbeat:178  status:\"Alive\""
+time=2026-09-22T23:03:32.533-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:126  status:\"Alive\"" localState="heartbeat:124  status:\"Alive\""
+time=2026-09-22T23:03:33.346-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:181  status:\"Alive\"" localState="heartbeat:180  status:\"Alive\""
+time=2026-09-22T23:03:33.531-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:127  status:\"Alive\"" localState="heartbeat:126  status:\"Alive\""
+time=2026-09-22T23:03:35.346-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:183  status:\"Alive\"" localState="heartbeat:181  status:\"Alive\""
+time=2026-09-22T23:03:35.538-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:128  status:\"Alive\"" localState="heartbeat:127  status:\"Alive\""
+time=2026-09-22T23:03:36.345-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:184  status:\"Alive\"" localState="heartbeat:183  status:\"Alive\""
+time=2026-09-22T23:03:36.530-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:130  status:\"Alive\"" localState="heartbeat:128  status:\"Alive\""
+time=2026-09-22T23:03:37.345-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:185  status:\"Alive\"" localState="heartbeat:184  status:\"Alive\""
+time=2026-09-22T23:03:37.530-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:131  status:\"Alive\"" localState="heartbeat:130  status:\"Alive\""
+time=2026-09-22T23:03:39.349-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:187  status:\"Alive\"" localState="heartbeat:185  status:\"Alive\""
+time=2026-09-22T23:03:39.530-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:133  status:\"Alive\"" localState="heartbeat:131  status:\"Alive\""
+time=2026-09-22T23:03:40.530-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:134  status:\"Alive\"" localState="heartbeat:133  status:\"Alive\""
+time=2026-09-22T23:03:41.345-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:188  status:\"Alive\"" localState="heartbeat:187  status:\"Alive\""
+time=2026-09-22T23:03:42.344-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=1:localhost:8080:1790136032 remoteState="heartbeat:189  status:\"Alive\"" localState="heartbeat:188  status:\"Alive\""
+time=2026-09-22T23:03:42.529-05:00 level=INFO msg="Membership list updated" machine=3 nodeID=2:localhost:8081:1790136086 remoteState="heartbeat:136  status:\"Alive\"" localState="heartbeat:134  status:\"Alive\""
+time=2026-09-22T23:05:48.027-05:00 level=INFO msg="Protocol mode changed" machine=3 enableSuspicion=false
+time=2026-09-22T23:05:48.086-05:00 level=INFO msg="Joining cluster via introducer..." machine=3 introHost=localhost introPort=8080
+time=2026-09-22T23:05:48.086-05:00 level=INFO msg="server joining cluster via introducer..." machine=3
+time=2026-09-22T23:05:48.146-05:00 level=INFO msg="server listening" machine=3 addr=localhost:8082
+time=2026-09-22T23:05:48.151-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=3 totalMembers=3
+time=2026-09-22T23:06:11.141-05:00 level=INFO msg="Drop rate updated" machine=3 dropRate=0.1
+time=2026-09-22T23:06:15.205-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:16.235-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:17.236-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:21.204-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:23.233-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:36.240-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:37.234-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:41.205-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:45.204-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:47.205-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:48.239-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:06:56.590-05:00 level=INFO msg="Node marked as Failed due to timeout" machine=3 nodeID=2:localhost:8081:1790136346
+time=2026-09-22T23:07:02.205-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:07:03.086-05:00 level=INFO msg="Node cleaned up from memory" machine=3 nodeID=2:localhost:8081:1790136346
+time=2026-09-22T23:07:07.205-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:07:22.698-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:07:23.205-05:00 level=INFO msg="Message dropped at receiver due to drop rate" machine=3 dropRate=0.1
+time=2026-09-22T23:07:29.556-05:00 level=INFO msg="Drop rate updated" machine=3 dropRate=0
+time=2026-09-22T23:07:37.253-05:00 level=INFO msg="Protocol mode changed" machine=3 enableSuspicion=true

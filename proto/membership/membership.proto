@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package membership;
+
+option go_package = "cs425/proto/membership";
+
+service MembershipService {
+  rpc GossipPush(GossipPushRequest) returns (GossipPushResponse);
+  rpc GossipJoin(GossipJoinRequest) returns (GossipJoinResponse);
+}
+
+message NodeState {
+  int32 heartbeat = 1;
+  int32 incarnation = 2;
+  string status = 3;
+}
+
+message GossipPushRequest {
+  map<string, NodeState> membership = 1;
+}
+
+message GossipPushResponse {}
+
+message GossipJoinRequest {
+  string node_id = 1;
+}
+
+message GossipJoinResponse {
+  map<string, NodeState> membership = 1;
+}
