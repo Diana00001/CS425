@@ -91,15 +91,6 @@ Print this process’s NodeID.
 list_self
 ```
 
-### `join`
-
-Non-introducer nodes already join at startup. Use this to join again (for example after a failed first attempt):
-
-```text
-join
-join localhost 8080
-```
-
 Default introducer is `-intro-host` / `-intro-port` from startup.
 
 ### `leave`
@@ -162,18 +153,3 @@ kill -9 <pid>
 ```
 
 Other nodes should mark the dead node `Failed` (or `Suspect` then `Failed` if suspicion is on), then remove it after cleanup.
-
-## Grep logs with MP1
-
-Logs are at `mp2/logs/machine.<id>.log`. From `mp1/`, point the MP1 client at those files to search for join / leave / fail / suspect / drop lines.
-
-## Tests
-
-There are no automated unit tests in this folder yet. Manual demo checklist:
-
-1. Start introducer, then 1–2 members; `list_mem` on each sees everyone.
-2. `leave` on one member; others drop it within a few seconds.
-3. Force-kill one member; others detect failure (and suspicion if enabled).
-4. Restart the killed member with a new process (new timestamp); it rejoins as a new NodeID.
-5. `switch suspect` / `switch nosuspect` on each node; `display_protocol` matches.
-6. `set_drop_rate 0.1` and confirm drop lines in the log.
