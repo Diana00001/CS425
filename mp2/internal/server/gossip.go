@@ -39,8 +39,6 @@ func (s *Server) GossipJoin(ctx context.Context, req *pb.GossipJoinRequest) (*pb
 
 func (s *Server) GossipPush(ctx context.Context, req *pb.GossipPushRequest) (*pb.GossipPushResponse, error) {
 	if rand.Float64() < s.dropRate {
-		fmt.Println("Message dropped at receiver due to drop rate", "dropRate", s.dropRate)
-		s.log.Info("Message dropped at receiver due to drop rate", "dropRate", s.dropRate)
 		return &pb.GossipPushResponse{}, nil
 	}
 
@@ -52,37 +50,38 @@ func (s *Server) GossipPush(ctx context.Context, req *pb.GossipPushRequest) (*pb
 			continue
 		}
 		localState, exists := s.membershipList[nodeID]
-
+		if exists && localState != nil && localState.Status == "Failed" {
+			continue
+		}
 
 		if !exists || localState == nil{
-			if remoteState.Status == "Failed" {
+			if s.tombstones[nodeID] {
 				continue
 			}
 			s.membershipList[nodeID] = cloneNodeState(remoteState)
 			s.localTimeList[nodeID] = time.Now()
 			continue
 		}
-
+		if remoteState.Status == "Failed" {
+			localState.Status = "Failed"
+			s.localTimeList[nodeID] = time.Now()
+			continue
+		}
 		if s.enableSuspicion {
 			if remoteState.Incarnation > localState.Incarnation {
 				s.membershipList[nodeID] = cloneNodeState(remoteState)
 				s.localTimeList[nodeID] = time.Now()
 			} else if remoteState.Incarnation == localState.Incarnation {
 				updated := false
-				if remoteState.Status == "Failed" && localState.Status != "Failed" {
-					updated = true
-				} else if remoteState.Status == localState.Status {
+				if remoteState.Status == localState.Status {
 					if remoteState.Heartbeat > localState.Heartbeat {
 						updated = true
 					}
 				} else {
 					if localState.Status == "Alive" && remoteState.Status == "Suspect" {
 						updated = true
-					} else if remoteState.Heartbeat > localState.Heartbeat {
-						updated = true
 					}
 				}
-
 				if updated {
 					s.membershipList[nodeID] = cloneNodeState(remoteState)
 					s.localTimeList[nodeID] = time.Now()
@@ -94,7 +93,6 @@ func (s *Server) GossipPush(ctx context.Context, req *pb.GossipPushRequest) (*pb
 				s.localTimeList[nodeID] = time.Now()
 			}
 		}
-
 	}
 	return &pb.GossipPushResponse{}, nil
 }

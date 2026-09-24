@@ -1,29 +1,5 @@
-time=2026-09-22T22:53:35.222-05:00 level=INFO msg="Protocol mode changed" machine=2 enableSuspicion=false
-time=2026-09-22T22:53:35.300-05:00 level=INFO msg="Joining cluster via introducer..." machine=2 introHost=localhost introPort=8080
-time=2026-09-22T22:53:35.300-05:00 level=INFO msg="server joining cluster via introducer..." machine=2
-time=2026-09-22T22:53:35.365-05:00 level=INFO msg="server listening" machine=2 addr=localhost:8081
-time=2026-09-22T22:53:35.373-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=2 totalMembers=2
-time=2026-09-22T23:00:35.187-05:00 level=INFO msg="Protocol mode changed" machine=2 enableSuspicion=false
-time=2026-09-22T23:00:35.274-05:00 level=INFO msg="Joining cluster via introducer..." machine=2 introHost=localhost introPort=8080
-time=2026-09-22T23:00:35.276-05:00 level=INFO msg="server joining cluster via introducer..." machine=2
-time=2026-09-22T23:00:35.332-05:00 level=INFO msg="server listening" machine=2 addr=localhost:8081
-time=2026-09-22T23:00:35.345-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=2 totalMembers=2
-time=2026-09-22T23:01:26.500-05:00 level=INFO msg="Protocol mode changed" machine=2 enableSuspicion=false
-time=2026-09-22T23:01:26.527-05:00 level=INFO msg="Joining cluster via introducer..." machine=2 introHost=localhost introPort=8080
-time=2026-09-22T23:01:26.528-05:00 level=INFO msg="server joining cluster via introducer..." machine=2
-time=2026-09-22T23:01:26.561-05:00 level=INFO msg="server listening" machine=2 addr=localhost:8081
-time=2026-09-22T23:01:26.565-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=2 totalMembers=3
-time=2026-09-22T23:03:44.028-05:00 level=INFO msg="Node marked as Failed due to timeout" machine=2 nodeID=3:localhost:8082:1790136035
-time=2026-09-22T23:03:50.528-05:00 level=INFO msg="Node cleaned up from memory" machine=2 nodeID=3:localhost:8082:1790136035
-time=2026-09-22T23:05:46.154-05:00 level=INFO msg="Protocol mode changed" machine=2 enableSuspicion=false
-time=2026-09-22T23:05:46.231-05:00 level=INFO msg="Joining cluster via introducer..." machine=2 introHost=localhost introPort=8080
-time=2026-09-22T23:05:46.232-05:00 level=INFO msg="server joining cluster via introducer..." machine=2
-time=2026-09-22T23:05:46.277-05:00 level=INFO msg="server listening" machine=2 addr=localhost:8081
-time=2026-09-22T23:05:46.284-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=2 totalMembers=2
-time=2026-09-22T23:07:19.669-05:00 level=INFO msg="Protocol mode changed" machine=2 enableSuspicion=false
-time=2026-09-22T23:07:19.695-05:00 level=INFO msg="Joining cluster via introducer..." machine=2 introHost=localhost introPort=8080
-time=2026-09-22T23:07:19.696-05:00 level=INFO msg="server joining cluster via introducer..." machine=2
-time=2026-09-22T23:07:19.720-05:00 level=INFO msg="server listening" machine=2 addr=localhost:8081
-time=2026-09-22T23:07:19.724-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=2 totalMembers=3
-time=2026-09-22T23:08:03.195-05:00 level=INFO msg="Node marked as Failed due to timeout" machine=2 nodeID=3:localhost:8082:1790136348
-time=2026-09-22T23:08:09.196-05:00 level=INFO msg="Node cleaned up from memory" machine=2 nodeID=3:localhost:8082:1790136348
+time=2026-09-24T00:45:30.481-05:00 level=INFO msg="Protocol mode changed" machine=2 enableSuspicion=false
+time=2026-09-24T00:45:30.555-05:00 level=INFO msg="Joining cluster via introducer..." machine=2 introHost=localhost introPort=8080
+time=2026-09-24T00:45:30.557-05:00 level=INFO msg="server joining cluster via introducer..." machine=2
+time=2026-09-24T00:45:30.619-05:00 level=INFO msg="server listening" machine=2 addr=localhost:8081
+time=2026-09-24T00:45:30.627-05:00 level=INFO msg="Successfully joined cluster via introducer" machine=2 totalMembers=2

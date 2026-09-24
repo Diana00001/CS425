@@ -51,6 +51,7 @@ type Server struct {
 	// localTimeList   map[string]int
 	localTimeList  map[string]time.Time // NodeID -> Last Updated Timestamp
 	suspectHistory  []SuspectRecord
+	tombstones     map[string]bool
 }
 
 func NewServer(id int, host string, port int, log *slog.Logger, introducer bool) (*Server, error) {
@@ -84,6 +85,7 @@ func NewServer(id int, host string, port int, log *slog.Logger, introducer bool)
 		// incarnationList:   make(map[string]int),
 		//localTimeList:     make(map[string]int),
 		localTimeList:  localTimeList,
+		tombstones:      make(map[string]bool),
 
 	}, nil
 }
@@ -393,6 +395,7 @@ func (s *Server) StartTimeoutChecker(failTimeout, suspectTimeout, cleanupTimeout
 				if state.Status == "Failed" && now.Sub(lastTime) > cleanupTimeout {
 					delete(s.membershipList, nodeID)
 					delete(s.localTimeList, nodeID)
+					s.tombstones[nodeID] = true
 					s.log.Info("Node cleaned up from memory", "nodeID", nodeID)
 					fmt.Println("Node cleaned up from memory", "nodeID", nodeID)
 				}
