@@ -385,14 +385,12 @@ func (s *Server) StartTimeoutChecker(failTimeout, suspectTimeout, cleanupTimeout
 						fmt.Println("Node marked as Failed due to timeout", "nodeID", nodeID)
 					}
 					s.localTimeList[nodeID] = now
-					} else if s.enableSuspicion && state.Status == "Suspect" && now.Sub(lastTime) > suspectTimeout {
-						state.Status = "Failed"
-						s.log.Info("Suspect node confirmed Failed (suspicion timeout expired)", "nodeID", nodeID)
-						s.localTimeList[nodeID] = now
-						fmt.Println("Suspect node confirmed Failed (suspicion timeout expired)", "nodeID", nodeID)
-					}
-
-				if state.Status == "Failed" && now.Sub(lastTime) > cleanupTimeout {
+				} else if s.enableSuspicion && state.Status == "Suspect" && now.Sub(lastTime) > suspectTimeout {
+					state.Status = "Failed"
+					s.log.Info("Suspect node confirmed Failed (suspicion timeout expired)", "nodeID", nodeID)
+					s.localTimeList[nodeID] = now
+					fmt.Println("Suspect node confirmed Failed (suspicion timeout expired)", "nodeID", nodeID)
+				} else if state.Status == "Failed" && now.Sub(lastTime) > cleanupTimeout {
 					delete(s.membershipList, nodeID)
 					delete(s.localTimeList, nodeID)
 					s.tombstones[nodeID] = true
